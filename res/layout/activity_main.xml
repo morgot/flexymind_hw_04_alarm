@@ -20,7 +20,8 @@
         android:id="@+id/toggleButton1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ToggleButton" />
+        android:text="ToggleButton"
+        android:onClick="toggleBtn" />
 
     <Button
         android:id="@+id/button1"
