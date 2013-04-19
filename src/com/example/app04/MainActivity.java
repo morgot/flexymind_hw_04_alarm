@@ -27,6 +27,8 @@ public class MainActivity extends Activity {
 		
 	}
 	
+	
+	
 	public long getTimePickerTime(){
 		
 		Calendar calendar = Calendar.getInstance();
@@ -50,9 +52,13 @@ public class MainActivity extends Activity {
 			long time = getTimePickerTime();
 			alarm.setTime(time);
 		} else {
+			
 			alarm.turnOff();
 		}
 			
 	}
 
+	public void exit(){
+		finish();
+	}
 }

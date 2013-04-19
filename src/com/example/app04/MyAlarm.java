@@ -1,5 +1,7 @@
 package com.example.app04;
 
+import java.util.Calendar;
+
 import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Context;
@@ -24,7 +26,9 @@ public class MyAlarm {
 		pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
 		alarmManager.set(AlarmManager.RTC_WAKEUP, time, pendingIntent);
 	}
+
 	public void turnOff(){
+		
 		alarmManager.cancel(pendingIntent);
 		}
 	
